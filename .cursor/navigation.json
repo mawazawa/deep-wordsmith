@@ -1,0 +1,44 @@
+{
+  "aiEnhancedNavigation": {
+    "semanticZoom": {
+      "levels": [
+        {
+          "name": "component",
+          "scale": 1.0,
+          "hotkey": "⌘1"
+        },
+        {
+          "name": "file",
+          "scale": 0.7,
+          "hotkey": "⌘2"
+        },
+        {
+          "name": "module",
+          "scale": 0.4,
+          "hotkey": "⌘3"
+        }
+      ]
+    },
+    "timeNavigation": {
+      "codeTimeline": "⌘⇧T",
+      "versionHop": "⌘⇧V"
+    }
+  },
+  "nextjsSpecific": {
+    "routeNavigation": {
+      "jumpToRoute": "⌘⇧R",
+      "jumpToLayout": "⌘⇧L"
+    },
+    "componentHierarchy": {
+      "jumpToParent": "⌘↑",
+      "jumpToChild": "⌘↓"
+    }
+  },
+  "contextAwareness": {
+    "rememberLastPosition": true,
+    "smartJump": {
+      "enabled": true,
+      "aiAssisted": true
+    }
+  }
+}

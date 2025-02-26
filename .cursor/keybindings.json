@@ -1,0 +1,27 @@
+{
+  "keyboard.shortcuts": [
+    {
+      "key": "⌘⇧A",
+      "command": "composer.claude-generate",
+      "when": "editorTextFocus",
+      "args": {
+        "promptType": "code_optimization"
+      }
+    },
+    {
+      "key": "⌘⇧E",
+      "command": "composer.claude-explain",
+      "when": "editorTextFocus",
+      "args": {
+        "depth": "advanced"
+      }
+    },
+    {
+      "key": "⌃⌥␣",
+      "command": "composer.contextual-menu",
+      "args": {
+        "position": "rightOfCursor"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="background-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#e0f2fe" />
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="24" ry="24" fill="url(#background-gradient)" />
+
+  <!-- Glass-like effect -->
+  <rect x="32" y="32" width="448" height="448" rx="16" ry="16" fill="white" fill-opacity="0.2" />
+
+  <!-- Words Logo Symbol -->
+  <g transform="translate(256, 200)">
+    <circle cx="0" cy="0" r="80" fill="white" fill-opacity="0.6" />
+    <path d="M-40,-40 L40,40 M-40,40 L40,-40" stroke="#0ea5e9" stroke-width="16" stroke-linecap="round" />
+    <circle cx="0" cy="0" r="16" fill="#0ea5e9" />
+  </g>
+
+  <!-- Words Text -->
+  <text x="256" y="320" font-family="Helvetica, Arial, sans-serif" font-size="24" text-anchor="middle" fill="url(#text-gradient)">
+    Deep Words
+  </text>
+
+  <!-- Image Placeholder Text -->
+  <text x="256" y="360" font-family="Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#64748b">
+    Image Placeholder
+  </text>
+</svg>

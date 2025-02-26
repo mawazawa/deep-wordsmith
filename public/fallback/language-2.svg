@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#eef2ff" />
+  <text x="50%" y="50%" font-family="Geist, sans-serif" font-size="22" text-anchor="middle" fill="#6366f1">
+    Fallback Image 2
+  </text>
+  <path d="M256 128c-70.7 0-128 57.3-128 128s57.3 128 128 128 128-57.3 128-128-57.3-128-128-128zm0 224c-52.9 0-96-43.1-96-96s43.1-96 96-96 96 43.1 96 96-43.1 96-96 96z" fill="#c7d2fe" />
+  <path d="M296 224h-80v-48h80v48zm-16 80h-48v-16h48v16zm-48-48h48v16h-48v-16z" fill="#818cf8" />
+</svg>

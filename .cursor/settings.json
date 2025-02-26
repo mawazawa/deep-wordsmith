@@ -1,0 +1,16 @@
+{
+  "editor.semanticNavigation": {
+    "aiAssist": true,
+    "depthAnalysis": 3,
+    "customRules": {
+      "reactComponents": {
+        "jumpBetweenProps": "⌘⇧↓",
+        "componentTree": "⌘⇧T"
+      },
+      "typescript": {
+        "typeNavigation": "⌘⇧⌥T",
+        "interfaceHop": "⌘⇧I"
+      }
+    }
+  }
+}

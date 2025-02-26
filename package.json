@@ -1,0 +1,70 @@
+{
+  "name": "deep-wordsmith",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "analyze": "ANALYZE=true next build",
+    "start": "next start",
+    "lint": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "check": "npm run lint && npm run type-check",
+    "prepare": "husky install",
+    "predeploy": "scripts/deployment-check.sh",
+    "vercel-build": "next build",
+    "clean": "rm -rf .next && rm -rf node_modules/.cache",
+    "configure-cursor": "bash ./scripts/setup-cursor-rules.sh"
+  },
+  "dependencies": {
+    "@radix-ui/react-tabs": "^1.1.3",
+    "@types/dompurify": "^3.0.5",
+    "@vercel/kv": "^3.0.0",
+    "axios": "^1.6.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "d3": "^7.9.0",
+    "dompurify": "^3.2.4",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.293.0",
+    "next": "14.0.3",
+    "next-themes": "^0.2.1",
+    "node-fetch": "^2.7.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-error-boundary": "^4.0.11",
+    "react-force-graph": "^1.47.3",
+    "replicate": "^1.0.1",
+    "sonner": "^1.2.0",
+    "swr": "^2.2.4",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.173.0"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^14.0.3",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.0.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}

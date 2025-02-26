@@ -1,0 +1,19 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="20" fill="url(#paint0_linear)" />
+  <path d="M30 38L50 26L70 38V62L50 74L30 62V38Z" stroke="white" stroke-width="3" stroke-linejoin="round" />
+  <path d="M50 26V74" stroke="white" stroke-width="3" />
+  <path d="M30 38L70 38" stroke="white" stroke-width="3" />
+  <path d="M30 62L70 62" stroke="white" stroke-width="3" />
+  <path d="M50 50L70 38" stroke="white" stroke-width="3" />
+  <path d="M50 50L30 38" stroke="white" stroke-width="3" />
+  <path d="M50 50L70 62" stroke="white" stroke-width="3" />
+  <path d="M50 50L30 62" stroke="white" stroke-width="3" />
+  <circle cx="50" cy="50" r="6" fill="white" />
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6" />
+      <stop offset="0.5" stop-color="#3B82F6" />
+      <stop offset="1" stop-color="#4F46E5" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,42 @@
+{
+  "m1Optimizations": {
+    "neuralEngine": {
+      "enableCoreML": true,
+      "aiBatchSize": 4
+    },
+    "memoryManagement": {
+      "unusedTabReclaim": "aggressive",
+      "aiCacheStrategy": "tensorflow.js"
+    },
+    "renderOptimizations": {
+      "metalAcceleration": true,
+      "dynamicFramerate": {
+        "activePane": 60,
+        "background": 30
+      }
+    }
+  },
+  "metal": {
+    "maxBuffers": 8,
+    "sharedMemory": true,
+    "aiTextureCompression": "ASTC"
+  },
+  "thermal": {
+    "throttleThreshold": 85,
+    "fallbackStrategy": "prioritizeAI"
+  },
+  "memory": {
+    "compression": "zstd",
+    "aiModelSwap": "aggressive"
+  },
+  "projectSpecific": {
+    "nextjs": {
+      "optimizeForAppRouter": true,
+      "tailwindIntelligence": true
+    },
+    "typescriptAnalysis": {
+      "incrementalTypeChecking": true,
+      "semanticCaching": true
+    }
+  }
+}

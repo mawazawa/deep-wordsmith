@@ -1,0 +1,75 @@
+# Context-aware AI rules for Next.js project
+- match: "**/*.tsx"
+  rules:
+    - when: "reactComponent"
+      actions:
+        - type: propTypesSuggest
+          position: inline
+        - type: storybookGen
+          hotkey: ⌘⇧S
+    - when: "apiService"
+      actions:
+        - type: errorHandling
+          level: enterprise
+        - type: rateLimitDecorator
+          position: above
+
+- match: "**/hooks/use*.ts"
+  rules:
+    - actions:
+        - type: hookOptimization
+          level: 3
+        - type: memoizationCheck
+          position: gutter
+
+- match: "**/app/api/**/*.ts"
+  rules:
+    - actions:
+        - type: apiSpecGen
+          format: "openapi"
+        - type: errorBoundaryGen
+          position: surround
+
+- match: "**/components/**/*.tsx"
+  rules:
+    - when: "ui"
+      actions:
+        - type: tailwindSuggest
+          level: advanced
+        - type: accessibilityCheck
+          standard: "wcag2.1"
+    - when: "form"
+      actions:
+        - type: validationSuggest
+          position: inline
+        - type: formStateSuggest
+          position: above
+
+# Next.js App Router specific rules
+- match: "**/app/**/page.tsx"
+  rules:
+    - actions:
+        - type: metadataGen
+          position: top
+        - type: routeAnalysis
+          level: detailed
+        - type: serverComponentOptimize
+          position: surround
+
+- match: "**/app/**/layout.tsx"
+  rules:
+    - actions:
+        - type: layoutAnalysis
+          position: surround
+        - type: accessibilityCheck
+          standard: "wcag2.2"
+
+# Tailwind specific optimizations
+- match: "**/*.{js,ts,jsx,tsx}"
+  rules:
+    - when: "tailwind"
+      actions:
+        - type: unusedClassCheck
+          position: gutter
+        - type: responsivePreview
+          hotkey: ⌘⇧P
